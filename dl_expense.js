@@ -40,6 +40,8 @@ window.addEventListener("load", function () {
       document.getElementById("submitButton").onclick = validateSummary;
 });
 
+//Added an event listener to create the variable changingcells & an id "submitButton"
+
 function validateSummary() {
       var validate = document.getElementById("summary");
       if (validate.validity.valueMissing) {
@@ -48,6 +50,8 @@ function validateSummary() {
             validate.setCustomValidity("");
       };
 }
+
+//This leaves a placeholder in the tip section so the host ccan tell the user what to do
 
 function calcClass(sumClass) {
       var sumFields = document.getElementsByClassName("sumClass");
@@ -63,6 +67,8 @@ function calcClass(sumClass) {
       return sumTotal;
 }
 
+//This gives the correct reports & displys them
+
 function calcExp() {
       var expTable = document.querySelectorAll(tr);
       for (var i = 0; i < expTable; i++) {
@@ -74,7 +80,7 @@ function calcExp() {
       var otherTotal = calcClass(other);
 }
 
-
+//creating all the necessary variables for the fill in's
 
 
 
